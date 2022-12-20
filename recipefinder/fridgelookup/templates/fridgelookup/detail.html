@@ -23,10 +23,6 @@
     <input type="submit" value="Add Ingredient">
 </form>
 
-
-<!--<li><a href="/fridgelookup/{{ fridge.id }}/results">results</a></li> 
-<li><a href="{% url 'fridgelookup:results' fridge.id %}"></a>results</li>-->
-
 <form action ="{% url 'fridgelookup:results' fridge.id %}" method="get">
     {% csrf_token %}
     <input type="submit" value="View Available Recipes">
